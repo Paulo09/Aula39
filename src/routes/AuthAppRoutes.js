@@ -3,17 +3,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from '../screens/HomeScreen';
 import ProdutosScreen from '../screens/ProdutosScreen';
-import LoginScreen from '../screens/LoginScreen';
 
 const Stack = createNativeStackNavigator();
-// ROTAS PUBLICAS
-export default function AppRoutes() {
+//Rotas Publicas
+export default function AuthRoutes() {
   return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName='Login'>
-          <Stack.Screen name='Login' component={LoginScreen} options={{ headerShown: false }} />
+        <Stack.Navigator initialRouteName='Home'>
+          <Stack.Screen name='Home' component={HomeScreen} options={{ title: "App FullStack", headerShown: false }} />
+          <Stack.Screen name='Produtos' component={ProdutosScreen}  />
         </Stack.Navigator>
       </NavigationContainer>
   );
 }
-
