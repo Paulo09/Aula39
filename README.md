@@ -10,9 +10,20 @@ npm install @react-navigation/native-stack<br>
 
 
 
-
-
-
+CRIAR E PUBLICAR UM APP REACT NATIVE + EXPO
+# Criando um projeto
+npx create-expo-app app
+cd app
+# Instalar dependencia para executar o projeto no navegador web
+npm i react-native-web@~0.19.6
+npm i react-dom@18.2.0
+npm i @expo/webpack-config@^19.0.0 
+# Site para praticar flexbox
+https://flexboxfroggy.com/
+# Executar o projeto em sua máquina
+npm run android
+npm run ios
+npm run web
 ####EAS - Enterprise Application Services
 
 EAS é Enterprise Application Services - É um serviço do Expo para publicar seu aplicativo em ambiente de desenvolvimento, homologação e produção.
@@ -62,4 +73,3 @@ eas build --platform android --profile preview
     "production": {}
   }
 }
-
